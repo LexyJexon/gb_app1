@@ -1,0 +1,41 @@
+
+{{ template "header.html" . }}
+
+<section>
+    <div class="container">
+        <h1>Список рецептов</h1>
+        <div class="row">
+            {{ range .Recipes }}
+            <div class="col-md-4">
+                <div class="card recipe-card">
+                    <img src="{{ .Image }}" class="card-img-top" alt="{{ .Title }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ .Title }}</h5>
+                        <p class="card-text">{{ .Description }}</p>
+                        <a href="/recipe/{{ .Id }}" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+
+    {{ if .flash.error }}
+    <div class="alert alert-danger" role="alert">
+        {{ .flash.error }}
+    </div>
+    {{ end }}
+
+    {{ if .flash.notice }}
+    <div class="alert alert-info" role="alert">
+        {{ .flash.notice }}
+    </div>
+    {{ end }}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+</section>
+
+{{ template "footer.html" . }}

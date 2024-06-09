@@ -1,0 +1,37 @@
+{{ template "header.html" . }}
+
+<section>
+
+    <div class="container">
+        <h1>{{ .Recipe.Title }}</h1>
+        <img src="/{{ .Recipe.Image }}" alt="{{ .Recipe.Title }}" style="max-width: 100%; height: auto;">
+        <h2>Ингредиенты:</h2>
+        <ul>
+            {{ range .Ingredients }}
+            <li>{{ .Name }} - {{ .Quantity }} {{ .Units }}</li>
+            {{ end }}
+        </ul>
+        <p><strong>Время приготовления:</strong> {{ .Recipe.CookTimeInMinutes }} минут</p>
+        <h2>Описание:</h2>
+        <p>{{ .Recipe.Description }}</p>
+        <h2>Автор:</h2>
+        <p>{{ .Author.Email }}</p>
+        <h2>Рецепт:</h2>
+        <p>{{ .Recipe.Recipe }}</p>
+    </div>
+
+{{ if .flash.error }}
+<div class="alert alert-danger" role="alert">
+    {{ .flash.error }}
+</div>
+{{ end }}
+
+{{ if .flash.notice }}
+<div class="alert alert-info" role="alert">
+    {{ .flash.notice }}
+</div>
+{{ end }}
+
+</section>
+
+{{ template "footer.html" . }}

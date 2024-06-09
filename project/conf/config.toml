@@ -1,0 +1,7 @@
+#DB
+[DB]
+DBHOST = "db"
+PORT = 3306
+DBNAME = "koocbook"
+DBUSERNAME = "webapp"
+DBUSERPWD = "qwe123"

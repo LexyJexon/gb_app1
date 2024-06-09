@@ -1,0 +1,11 @@
+2024/02/21 18:26:35.059 [1;34m[I][0m [server.go:280]  http server Running on http://:8080
+2024/02/21 18:26:36.857 [1;44m[D][0m [router.go:1305]  |     172.18.0.1|[97;42m 200 [0m|  16.274611ms|   match|[97;44m GET     [0m /search   r:/search
+2024/02/21 18:26:36.885 [1;44m[D][0m [router.go:1305]  |     172.18.0.1|[90;47m 304 [0m|    277.354µs|   match|[97;44m GET     [0m /static/images/1.webp
+2024/02/21 18:26:42.387 [1;44m[D][0m [router.go:1305]  |     172.18.0.1|[97;42m 200 [0m|   5.422476ms|   match|[97;44m GET     [0m /recipe/1   r:/recipe/:id
+2024/02/21 18:26:43.429 [1;44m[D][0m [router.go:1305]  |     172.18.0.1|[97;42m 200 [0m|   1.798699ms|   match|[97;44m GET     [0m /create-recipe   r:/create-recipe
+2024/02/21 18:26:53.593 [1;44m[D][0m [router.go:1305]  |     172.18.0.1|[90;47m 302 [0m|  40.364245ms|   match|[97;46m POST    [0m /create-recipe   r:/create-recipe
+2024/02/21 18:26:53.598 [1;44m[D][0m [router.go:1305]  |     172.18.0.1|[97;42m 200 [0m|   1.463084ms|   match|[97;44m GET     [0m /recipes   r:/recipes
+2024/02/21 18:26:53.624 [1;44m[D][0m [router.go:1305]  |     172.18.0.1|[97;42m 200 [0m|    605.734µs|   match|[97;44m GET     [0m /static/images/2.webp
+2024/02/21 18:26:58.575 [1;44m[D][0m [router.go:1305]  |     172.18.0.1|[97;42m 200 [0m|   1.867838ms|   match|[97;44m GET     [0m /search   r:/search
+2024/02/21 18:27:01.025 [1;44m[D][0m [router.go:1305]  |     172.18.0.1|[97;42m 200 [0m|    3.22428ms|   match|[97;44m GET     [0m /search   r:/search
+2024/02/21 18:27:01.054 [1;44m[D][0m [router.go:1305]  |     172.18.0.1|[90;47m 304 [0m|     83.627µs|   match|[97;44m GET     [0m /static/images/2.webp

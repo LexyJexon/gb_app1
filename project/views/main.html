@@ -1,0 +1,16 @@
+{{ template "header.html" . }}
+
+<!-- Кнопки для входа и регистрации -->
+<section>
+    <h2>Добро пожаловать!</h2>
+    <a href="/login"><button>Вход</button></a>
+    <a href="/register"><button>Регистрация</button></a>
+
+    {{ if .flash.notice }}
+        <div class="alert alert-info" role="alert">
+            {{ .flash.notice }}
+        </div>
+    {{ end }}
+</section>
+
+{{ template "footer.html" . }}

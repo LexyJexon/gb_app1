@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App</title>
+    <!-- Ваши стили CSS, скрипты JS и другие метатеги -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигационное меню, логотип, ссылки и т.д. -->
+    <header>
+        <!--<h1>Мой сайт</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/create-recipe">Создать рецепт</a></li>
+                &lt;!&ndash; Другие ссылки на страницы вашего сайта &ndash;&gt;
+            </ul>
+        </nav>-->
+
+        <div class="container py-3">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <img class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap" src="/static/img/logo.png" alt="logo">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="/recipes" class="nav-link px-2 text-secondary">Recipes</a></li>
+                    <li><a href="/create-recipe" class="nav-link px-2 text-secondary">Create recipe</a></li>
+                </ul>
+
+                <form action="/search" method="get" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" name="query" class="form-control text-bg-white" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-dark me-2">Login</button>
+                    <button type="button" class="btn btn-warning btn-outline-dark">Sign-up</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
